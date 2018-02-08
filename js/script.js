@@ -134,12 +134,12 @@ function checkIfFinished(playerScore, computerScore) {
   }
 
   if (isFinished) {
-    Finish(isFinished, whoWon);
+    doFinish(isFinished, whoWon);
   }
 }
 
 // Last function set game state as ended
-function Finish(isFinished, whoWon) {
+function doFinish(isFinished, whoWon) {
   gameState = 'ended';
   setGameElements();
   var newText = document.createElement('p');
